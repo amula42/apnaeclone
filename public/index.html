@@ -3,6 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta name="p:domain_verify" content="b476f52d8869cafc3a9edcb0452add25" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMLMB556E0"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-EMLMB556E0');
+      </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -15,29 +26,192 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <!-- inject css start -->
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+<!-- == bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<!--== animate -->
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
+
+<!--== fontawesome -->
+<link href="css/fontawesome-all.css" rel="stylesheet" type="text/css" />
+   
+<!--== themify -->
+<link href="css/themify-icons.css" rel="stylesheet" type="text/css" />
+
+<!--== audioplayer -->
+<link href="css/audioplayer/plyr.css" rel="stylesheet" type="text/css" />
+
+<!--== magnific-popup -->
+<link href="css/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" /><link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js" rel="stylesheet" type="text/css" />
+<!--== owl-carousel -->
+<link href="css/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+
+<!--== base -->
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+
+<!--== shortcodes -->
+<link href="css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!--== default-theme -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!--== responsive -->
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- inject js start -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<!--== jquery -->
+<script src="js/jquery.min.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+<!--== popper -->
+<script src="js/popper.min.js"></script>
+
+<!--== bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!--== appear -->
+<script src="js/jquery.appear.js"></script> 
+
+<!--== modernizr -->
+<script src="js/modernizr.js"></script> 
+
+<!--== audioplayer -->
+<script src="js/audioplayer/plyr.min.js"></script>
+
+<!--== magnific-popup -->
+<script src="js/magnific-popup/jquery.magnific-popup.min.js"></script> 
+
+<!--== owl-carousel -->
+<script src="js/owl-carousel/owl.carousel.min.js"></script> 
+
+<!--== counter -->
+<script src="js/counter/counter.js"></script> 
+
+<!--== countdown -->
+<script src="js/countdown/jquery.countdown.min.js"></script> 
+
+<!--== isotope -->
+<script src="js/isotope/isotope.pkgd.min.js"></script> 
+
+<!--== mouse-parallax -->
+<script src="js/mouse-parallax/tweenmax.min.js"></script>
+<script src="js/mouse-parallax/jquery-parallax.js"></script> 
+
+<!--== contact-form -->
+<script src="js/contact-form/contact-form.js"></script>
+
+<!--== wow -->
+<script src="js/wow.min.js"></script>
+
+<!--== theme-script -->
+<script src="js/theme-script.js"></script>
+    <script type="text/javascript">let modalId = $('#image-gallery');
+
+$(document)
+  .ready(function () {
+
+    loadGallery(true, 'a.thumbnail');
+
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+
+    /**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+  });
+
+// build key actions
+$(document)
+  .keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          $('#show-previous-image')
+            .click();
+        }
+        break;
+
+      case 39: // right
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          $('#show-next-image')
+            .click();
+        }
+        break;
+
+      default:
+        return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+</script>
+<script type="text/javascript">$(window).on('load', function() {
+   setTimeout(function(){
+     $('#subscribeModal').modal('show');
+   }, 500);
+});
+$('#Reloadpage').click(function() {
+    location.reload();
+}); </script>
+<!-- inject js end -->
   </body>
 </html>
