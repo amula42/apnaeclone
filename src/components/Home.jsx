@@ -24,7 +24,7 @@ const Home = () => {
                   <div className="col-lg-7 col-md-12 order-lg-1 md-mt-5">
                     <h2 className="mb-4 text-white animated bounce delay-2 duration-4">  
                     <span className="font-w-5 text-black">आप का  स्वागत है | </span> </h2>
-                    <h1 className=" mb-4 text-blue animated bounce delay-2 duration-4">  अपना  ई - केन्द्र </h1>
+                    <h1 className=" mb-4 text-blue animated bounce delay-2 duration-4">  {hcompany} </h1>
                     <h3 className="mb-4 text-white animated bounce delay-2 duration-4">  
                     <span className="font-w-6 text-black"> में  जो देते  है  डिजिटल भुगतान  की  सुविधा | </span> </h3>
                     <p className="lead text-white animated fadeInUp delay-3 duration-4">Start working with an company that provide everything you need to generate awareness, drive traffic, connect with customers.</p>
@@ -44,7 +44,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="col-lg-7 col-md-12 order-lg-1 md-mt-5">
-                            <h1 className=" mb-4 text-blue animated bounce delay-2 duration-4">  अपना  ई - केन्द्र </h1>
+                            <h1 className=" mb-4 text-blue animated bounce delay-2 duration-4">  {hcompany} </h1>
                     <h2 className="mb-4 text-black animated bounce delay-2 duration-4"> डिजिटल भुगतान की सेवाएं  प्रदान  करता है |  <span className="font-w-5 text-orange "> कही भी  और  कभी  भी </span> </h2>
                   
                     <div className="animated fadeInUp delay-3 duration-4">
