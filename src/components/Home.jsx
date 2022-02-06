@@ -1,16 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {Lupdate, Hservices, Testimonial} from '../data/Sdata';
+import '../data/Globalvar';
 
 const Home = () => {
 
-  const company = "Apna E-Kendra";
-  const hcompany = "अपना ई केन्द्र";
-  const established = "November 2020";
-
   return <div>
       <section className="fullscreen-banner banner banner-3 p-0 o-hidden grediant-overlay" data-overlay="9">
-        <div className="insideText">{company}</div>
+        <div className="insideText">{global.company}</div>
         <div className="owl-carousel owl-theme no-pb" data-items="1" data-dots="false" data-autoplay="true" style={{ position:"absolute" }}>
           <div className="item">
             <div className="align-center p-0">
@@ -24,10 +21,9 @@ const Home = () => {
                   <div className="col-lg-7 col-md-12 order-lg-1 md-mt-5">
                     <h2 className="mb-4 text-white animated bounce delay-2 duration-4">  
                     <span className="font-w-5 text-black">आप का  स्वागत है | </span> </h2>
-                    <h1 className=" mb-4 text-blue animated bounce delay-2 duration-4">  {hcompany} </h1>
+                    <h1 className=" mb-4 text-blue animated bounce delay-2 duration-4">  {global.hcompany} </h1>
                     <h3 className="mb-4 text-white animated bounce delay-2 duration-4">  
                     <span className="font-w-6 text-black"> में  जो देते  है  डिजिटल भुगतान  की  सुविधा | </span> </h3>
-                    <p className="lead text-white animated fadeInUp delay-3 duration-4">Start working with an company that provide everything you need to generate awareness, drive traffic, connect with customers.</p>
                     <div className="animated fadeInUp delay-3 duration-4"></div>
                   </div>
                 </div>
@@ -44,7 +40,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="col-lg-7 col-md-12 order-lg-1 md-mt-5">
-                            <h1 className=" mb-4 text-blue animated bounce delay-2 duration-4">  {hcompany} </h1>
+                            <h1 className=" mb-4 text-blue animated bounce delay-2 duration-4">  {global.hcompany} </h1>
                     <h2 className="mb-4 text-black animated bounce delay-2 duration-4"> डिजिटल भुगतान की सेवाएं  प्रदान  करता है |  <span className="font-w-5 text-orange "> कही भी  और  कभी  भी </span> </h2>
                   
                     <div className="animated fadeInUp delay-3 duration-4">
@@ -87,9 +83,9 @@ const Home = () => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-10 col-md-9 col-sm-10 col-xs-12">
-                <marquee scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+                <marquee scrollamount="5">
                  <h6 className="spacemark">
-                  <a href="#" style={{color: "#fff;"}}> अपना ई - केंद्र  का रजिस्ट्रेशन करने के लिए  Online Signup https://apnaekendra.in/MemberRegistration.aspx </a>
+                  <a href="#" style={{color: "#fff"}}> {global.hcompany}  का रजिस्ट्रेशन करने के लिए  Online Signup https://apnaekendra.in/MemberRegistration.aspx </a>
                   </h6>
                 </marquee>
               </div>
@@ -109,9 +105,9 @@ const Home = () => {
               <h6>Latest Update </h6>
             </div>
 
-         <marquee scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+         <marquee scrollamount="5">
             <ul className="list-unstyled list-icon">
-              <li className="mb-3"><i className="flaticon-tick"></i>"अपना ई केंद्र" लाया है "लोन " की एक नयी सुविधा अब आप "अपना ई केंद्र" के साथ जुड़ कर अपने गांव शहर में कही भी किसे भी लोन की सुविधा दे सकते है , इतना ही नहीं प्रत्येक "लोन" देने पर कमीशन की सुविधा अब रिटेलर , डिस्ट्रीब्यूटर , मास्टर , सुपर सभी को मिलेगा। लोन देने पर कमीशन साथ ही साथ , EMI पेमेंट पर भी 0.50% तक कमीशन। देर न करे जल्द ही रजिस्टर करे :- https://apnaekendra.in या संपर्क करे:- 9076617197,96,92,94</li>
+              <li className="mb-3"><i className="flaticon-tick"></i>"{global.hcompany}" लाया है "लोन " की एक नयी सुविधा अब आप "अपना ई केंद्र" के साथ जुड़ कर अपने गांव शहर में कही भी किसे भी लोन की सुविधा दे सकते है , इतना ही नहीं प्रत्येक "लोन" देने पर कमीशन की सुविधा अब रिटेलर , डिस्ट्रीब्यूटर , मास्टर , सुपर सभी को मिलेगा। लोन देने पर कमीशन साथ ही साथ , EMI पेमेंट पर भी 0.50% तक कमीशन। देर न करे जल्द ही रजिस्टर करे :- https://apnaekendra.in या संपर्क करे:- 9076617197,96,92,94</li>
           
             </ul>
           </marquee>
@@ -119,10 +115,10 @@ const Home = () => {
           <div className="col-lg-7 col-md-12 md-mt-5 wow fadeInRight" data-wow-duration="0.8">
             <div className="owl-carousel owl-theme no-pb" data-dots="false" data-items="2" data-sm-items="1" data-autoplay="true">
 
-              {Lupdate.map((val)=>{
+              {Lupdate.map((val,ind)=>{
                 const {imgs,title} = val;
                 return(
-                  <div className="item">
+                  <div className="item" key={ind}>
                   <div className="featured-item text-center style-2 mx-3 my-3">
                       <div className="featured-icon">
                       <img className="img-center" src={imgs} alt=""/>
@@ -155,9 +151,9 @@ const Home = () => {
           <div className="col-lg-7 col-md-12 ml-auto md-mt-5 wow fadeInLeft" data-wow-duration="0.6">
               <div className="section-title mb-4">
                   <h6>About Us</h6>
-                  <h2 className="title">Welcome to {company}</h2>
+                  <h2 className="title">Welcome to {global.company}</h2>
                   <p>
-                      {company} established in {established} year in a short time we made our presence known in India with 60,000+ active agents across 25 states and 500+ districts. {company} is India's most trusted digital services portal which provides more than 50 services like banking, travel, household bill payment, voter pen, and Aadhaar card to its agents, then agents provide these services to their customers and earn commission per transactions.
+                      {global.company} established in {global.established} year in a short time we made our presence known in India with 60,000+ active agents across 25 states and 500+ districts. {global.company} is India's most trusted digital services portal which provides more than 50 services like banking, travel, household bill payment, voter pen, and Aadhaar card to its agents, then agents provide these services to their customers and earn commission per transactions.
                       We provide distributors, retailers, master distributors, and state heads id at very reasonable prices to our agents and provide every possible opportunity to our retailers and distributors to earn with minimum investment and maximum return. We trust that "Our Success" is possible just through" Your Success" so we put our best effort to make you succeed by giving round-the-clock support.
                       Cost-Effective We never take more or undersell our product which means all of our products and services are evaluated according to the Industry standards.
                   </p>
@@ -226,10 +222,10 @@ const Home = () => {
         </div>
        
         <div className="row spacedata">
-          {Hservices.map((hsval) => {
+          {Hservices.map((hsval,ind2) => {
             const { hsimgs, hstitle, hslink } = hsval;
             return(
-              <div className="col-lg-3 col-md-6 wow fadeInLeft" data-wow-duration="0.6">
+              <div className="col-lg-3 col-md-6 wow fadeInLeft" key={ind2} data-wow-duration="0.6">
                 <div className="featured-item text-center">
                   <div className="featured-icon">
                     <img className="img-center" src={hsimgs} alt=""/>
@@ -274,7 +270,7 @@ const Home = () => {
           <div className="col-lg-6 col-md-12 md-mt-5 wow fadeInLeft" data-wow-duration="0.8">
             <div className="section-title mb-4">
               <h2 className="title">Retailer</h2> 
-              <p className="mb-0 text-black">{company} is to provide employment to more and more people by providing affordable services so that they can make extra income from their home or shop. {company} gives the highest commission on every service.</p>
+              <p className="mb-0 text-black">{global.company} is to provide employment to more and more people by providing affordable services so that they can make extra income from their home or shop. {global.company} gives the highest commission on every service.</p>
             </div>
           </div>
         </div>
@@ -296,7 +292,7 @@ const Home = () => {
           <div className="col-lg-6 col-md-12 order-lg-1 md-mt-5 wow fadeInLeft" data-wow-duration="0.8">
             <div className="section-title mb-4">
               <h2 className="title">Distributor</h2> 
-              <p className="mb-0 text-black">{company} has brought a golden opportunity for distributors to do business! {company} commits handsome commission to distributors which is more than other service providers in the market. We have now started providing loan facilities to our agents as well.</p>
+              <p className="mb-0 text-black">{global.company} has brought a golden opportunity for distributors to do business! {global.company} commits handsome commission to distributors which is more than other service providers in the market. We have now started providing loan facilities to our agents as well.</p>
             </div>
            
           </div>
@@ -316,7 +312,7 @@ const Home = () => {
           <div className="col-lg-6 col-md-12 md-mt-5 wow fadeInLeft" data-wow-duration="0.8">
             <div className="section-title mb-4">
               <h2 className="title">Individual Business</h2> 
-              <p className="mb-0 text-black">{company} offers a golden opportunity for people so that they can connect with us and do their own work from this shop at their home. Our services can make home and shop a customer service center, allowing customers to provide cash inquiries, balance inquiries, bill payments, Aadhaar cards, pen cards, etc. to their customers and also get a commission on every transaction. With which you can get income every month.</p>
+              <p className="mb-0 text-black">{global.company} offers a golden opportunity for people so that they can connect with us and do their own work from this shop at their home. Our services can make home and shop a customer service center, allowing customers to provide cash inquiries, balance inquiries, bill payments, Aadhaar cards, pen cards, etc. to their customers and also get a commission on every transaction. With which you can get income every month.</p>
             </div>
             
           </div>
@@ -368,7 +364,7 @@ const Home = () => {
                   <img className="img-center" src="images/how-it-work/03.png" alt=""/>
                   <span className="step-num">03</span> 
                 </div>
-                <h4 className="colorbox2">{hcompany}  की सेवाएं  का उपयोग  करे </h4>
+                <h4 className="colorbox2">{global.hcompany}  की सेवाएं  का उपयोग  करे </h4>
               </div>
             </div>
           </div>s
@@ -390,10 +386,10 @@ const Home = () => {
           </div>
           <div className="col-lg-7 col-md-12 md-mt-5">
             <div className="owl-carousel owl-theme" data-items="1">
-              {Testimonial.map((testi) => {
+              {Testimonial.map((testi,ind3) => {
                 const { thmimg, thnname, thmcntnt, thmlcn } = testi;
                 return(
-                  <div className="item">
+                  <div className="item" key={ind3}>
                     <div className="testimonial">
                       <div className="testimonial-img">
                         <img className="img-center" src={thmimg} alt=""/> 

@@ -79,7 +79,7 @@ const Navbar = () => {
                         </div>
                         <div className="right-nav align-items-center d-flex justify-content-end list-inline">
                             <a className="blinking   btn btn-theme btn-sm" href="signin.html">Login</a>
-                            <a className="blinking  btn btn-theme btn-sm" href="membersignup.html" target="_blank">Register</a>
+                            <a className="blinking  btn btn-theme btn-sm" href="membersignup.html" target="__blank">Register</a>
                         </div>
                         </nav>
                     </div>

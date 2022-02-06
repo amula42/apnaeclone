@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../data/Globalvar';
 
 const Footer = () => {
   return <div>
@@ -12,9 +14,9 @@ const Footer = () => {
                             <div className="col-lg-4 col-md-4  sm-mt-5">
                                 <div className="" data-bg-img="images/bg/02.png">
                                     <div className="footer-logo">
-                                        <a href="index-2.html"><img className="img-center" src="images/logo-white.png" alt="" /></a>
+                                        <NavLink to="/"><img className="img-center" src="images/logo-white.png" alt="" /></NavLink>
                                     </div>
-                                    <p className="mb-3">Apna e-kendra is a  one-stop b2b digital services provider in india. Which is providing all types of digital services<br/>(aeps, bbps, dmt, banking, utility bill, travel & all recharge)  at an affordable price with lots of benefits. </p>
+                                    <p className="mb-3">{global.company} is a  one-stop b2b digital services provider in india. Which is providing all types of digital services<br/>(aeps, bbps, dmt, banking, utility bill, travel & all recharge)  at an affordable price with lots of benefits. </p>
                                     <div className="social-icons social-border circle social-hover ">
                                         <ul className="list-inline">
                                             <li className="social-facebook">
@@ -47,9 +49,9 @@ const Footer = () => {
                                 <div className="row">
                                     <div className="col-sm-5">
                                         <ul className="list-unstyled">
-                                            <li><a href="index-2.html">Home</a></li>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="services.html">Services</a></li>
+                                            <li><NavLink to="/">Home</NavLink></li>
+                                            <li><NavLink to="/about">About Us</NavLink></li>
+                                            <li><NavLink to="/services">Services</NavLink></li>
                                             <li><a href="photogallary.html">Photo Gallery</a></li>
                                             <li><a href="videogallery.html">Video Gallery</a></li>
                                             <li><a href="privacypolicy.html">Privacy Policy</a></li>
@@ -107,7 +109,7 @@ const Footer = () => {
                 <div className="container">
                 <div className="copyright">
                     <div className="row align-items-center">
-                    <div className="col-md-6"> <span><span id="lblcopywrite">All Right Reserve Apna E Kendra</span></span>
+                    <div className="col-md-6"> <span><span id="lblcopywrite">All Right Reserve {global.company}</span></span>
                     </div>
                     </div>
                 </div>
