@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import MoneyTransfer from './components/Services/MoneyTransfer';
 
 function App() {
 
@@ -17,8 +18,10 @@ function App() {
         <Route exact path="/about" element={<About/>} />
         <Route exact path="/services" element={<Services/>} />
         <Route exact path="/contact" element={<Contact/>} />
+        <Route exact path="/moneytransfer" element={<MoneyTransfer/>} />
       </Routes>
     <Footer />
+    <div className="scroll-top"><a className="smoothscroll" href="#top"><i className="flaticon-upload"></i></a></div>
     </>
   );
 }

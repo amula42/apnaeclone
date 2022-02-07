@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {Lupdate, Hservices, Testimonial} from '../data/Sdata';
-import '../data/Globalvar';
 
 const Home = () => {
 

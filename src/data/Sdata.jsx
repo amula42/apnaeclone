@@ -80,4 +80,146 @@ const Testimonial = [
         thmlcn:"Customer, Lucknow",
     },
 ];
-export  { Lupdate, Hservices, Testimonial };
+const Servpg = [
+    {
+        servimgs:"images/feature/08032104131404.png",
+        servtitle:"All Recharge",
+        servlink:"/about",
+    },
+    {
+        servimgs:"images/feature/08032107083502.png",
+        servtitle:"Money Transfer",
+        servlink:"/moneytransfer",
+    },
+    {
+        servimgs:"images/feature/08032107093103.png",
+        servtitle:"AEPS",
+        servlink:"nsdl.html",
+    },
+    {
+        servimgs:"images/feature/08032107104905.png",
+        servtitle:"BBPS",
+        servlink:"Paytm_Payment.html",
+    },
+    {
+        servimgs:"images/feature/08032107113607.png",
+        servtitle:"DTH Recharge",
+        servlink:"msme.html",
+    },
+    {
+        servimgs:"images/feature/08032107121608.png",
+        servtitle:"Balance Enquiry",
+        servlink:"moneytransfer.html",
+    },
+    {
+        servimgs:"images/feature/08032107131613.png",
+        servtitle:"Mini Statement",
+        servlink:"aeps.html",
+    },
+    {
+        servimgs:"images/feature/08032107135309.png",
+        servtitle:"Aadhar Pay",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107143611.png",
+        servtitle:"Electricity",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107150712.png",
+        servtitle:"Gas Booking",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107155113.png",
+        servtitle:"Water",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107163314.png",
+        servtitle:"Loan Bill Pay",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107171015.png",
+        servtitle:"EMI Bill Pay",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107174216.png",
+        servtitle:"Gas Bill Pay",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107181317.png",
+        servtitle:"Fastag Recharge",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107185318.png",
+        servtitle:"Credit Card Bill Pay",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107193119.png",
+        servtitle:"Land Line Bill Pay",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107200720.png",
+        servtitle:"Cable Tv Recharge",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107205022.png",
+        servtitle:"School Fee",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107213028.png",
+        servtitle:"Insurance Bill Pay",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107221523.png",
+        servtitle:"Micro ATM",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107225024.png",
+        servtitle:"Payout",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107252526.png",
+        servtitle:"INDO Nepal",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107255827.png",
+        servtitle:"UTI Pan Card",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107263028.png",
+        servtitle:"Cash Deposit",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107270029.png",
+        servtitle:"Driving Licence",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107273630.png",
+        servtitle:"DTH Booking",
+        servlink:"bbps.html",
+    },
+    {
+        servimgs:"images/feature/08032107305025.png",
+        servtitle:"Voter Id Card",
+        servlink:"bbps.html",
+    },
+];
+export  { Lupdate, Hservices, Testimonial, Servpg };

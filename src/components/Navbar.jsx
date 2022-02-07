@@ -12,6 +12,10 @@ const Navbar = () => {
                         <NavLink className="navbar-brand logo" to="/">
                             <img id="logo-img" className="img-center" src="images/logo.png" alt="logo" />
                         </NavLink>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav ml-auto mr-auto">
 
