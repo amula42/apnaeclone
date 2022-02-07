@@ -11,7 +11,7 @@ const Servcrd = (props) => {
             <div className="col-lg-12 col-md-12">
               <div>
                 <div className="service-images">
-                  <img className="img-fluid w-100" src={props.servimg} alt="moneytransfer" />
+                  <img className="img-fluid w-100" src="images/service/moneytransfer3.png" alt="moneytransfer" />
                 </div>
                 <div className="service-details mt-4">
                   <h2 className="title">{props.servtitle}</h2>
