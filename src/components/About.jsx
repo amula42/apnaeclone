@@ -50,7 +50,7 @@ const About = () => {
       </section>
 
       {/* tab start */}
-      <section className="green-bg animatedBackground" data-bg-img="images/pattern/05.png">
+      <section className="green-bg animatedBackground"  style={{backgroundImage: "url(images/pattern/05.png)"}}>
         <div className="container">
           <div className="row">
             <div className="col-sm-12">

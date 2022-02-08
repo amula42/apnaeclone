@@ -4,7 +4,7 @@ import '../data/Globalvar';
 
 const Footer = () => {
   return <div>
-        <footer className="footer white-bg pos-r o-hidden bg-contain" data-bg-img="images/pattern/01.png" style={{backgroundImage: "url(_images/pattern/01.html)"}}>
+        <footer className="footer white-bg pos-r o-hidden bg-contain" style={{backgroundImage: "url(images/pattern/01.png)"}} >
             <div className="round-p-animation"></div>
             <div className="primary-footer">
                 <div className="container p-0">

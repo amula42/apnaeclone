@@ -233,7 +233,7 @@ const Home = () => {
                     <h5>{hstitle}</h5>
                   </div>
                   <div className="featured-desc">
-                    <a className="btn btn-theme" href={hslink}><span>View</span></a>
+                    <NavLink className="btn btn-theme" to={hslink}><span>View</span></NavLink>
                   </div>
                 </div>
             </div>

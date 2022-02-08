@@ -28,42 +28,42 @@ const Hservices = [
     {
         hsimgs:"images/feature/drvinglience.png",
         hstitle:"Driving Licence",
-        hslink:"drivinglicence.html",
+        hslink:"/drivinglicence",
     },
     {
         hsimgs:"images/feature/voterid.png",
         hstitle:"Voter Id",
-        hslink:"voteridcard.html",
+        hslink:"/voterid",
     },
     {
         hsimgs:"images/feature/ndsl.png",
         hstitle:"NSDL",
-        hslink:"nsdl.html",
+        hslink:"/nsdlbank",
     },
     {
         hsimgs:"images/feature/patmpaymentbank.png",
         hstitle:"Paytm Bank",
-        hslink:"Paytm_Payment.html",
+        hslink:"/paytmbank",
     },
     {
         hsimgs:"images/feature/msme.png",
         hstitle:"MSME",
-        hslink:"msme.html",
+        hslink:"/msme",
     },
     {
         hsimgs:"images/feature/04.png",
         hstitle:"Money Transfer",
-        hslink:"moneytransfer.html",
+        hslink:"/moneytransfer",
     },
     {
         hsimgs:"images/feature/03.png",
         hstitle:"AEPS",
-        hslink:"aeps.html",
+        hslink:"/aeps",
     },
     {
         hsimgs:"images/feature/05.png",
         hstitle:"BBPS",
-        hslink:"bbps.html",
+        hslink:"/bbps",
     },
 ];
 const Testimonial = [
@@ -84,7 +84,7 @@ const Servpg = [
     {
         servimgs:"images/feature/08032104131404.png",
         servtitle:"All Recharge",
-        servlink:"/about",
+        servlink:"/allrecharge",
     },
     {
         servimgs:"images/feature/08032107083502.png",
