@@ -1,0 +1,63 @@
+const Photodata = [
+  {
+    pimgs:"images/feature/08032108075615.png",
+  },
+  {
+    pimgs:"images/feature/08032108074614.png",
+  },
+  {
+    pimgs:"images/feature/08032108073413.png",
+  },
+  {
+    pimgs:"images/feature/08032108072312.png",
+  },
+  {
+    pimgs:"images/feature/08032108071111.png",
+  },
+  {
+    pimgs:"images/feature/08032108065610.png",
+  },
+  {
+    pimgs:"images/feature/08032108064209.png",
+  },
+  {
+    pimgs:"images/feature/08032108063108.png",
+  },
+  {
+    pimgs:"images/feature/08032108062007.png",
+  },
+  {
+    pimgs:"images/feature/08032108060506.png",
+  },
+  {
+    pimgs:"images/feature/08032108041805.png",
+  },
+  {
+    pimgs:"images/feature/08032108034503.png",
+  },
+  {
+    pimgs:"images/feature/08032108033102.png",
+  },
+  {
+    pimgs:"images/feature/08032108023301.png",
+  },
+];
+
+const Videodata = [
+  {
+    vvideo:"https://www.youtube.com/embed/HplydH7vpL4",
+  },
+  {
+    vvideo:"https://www.youtube.com/embed/HplydH7vpL4",
+  },
+  {
+    vvideo:"https://www.youtube.com/embed/HplydH7vpL4",
+  },
+  {
+    vvideo:"https://www.youtube.com/embed/HplydH7vpL4",
+  },
+  {
+    vvideo:"https://www.youtube.com/embed/HplydH7vpL4",
+  },
+];
+export  { Photodata, Videodata };

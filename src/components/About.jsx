@@ -1,6 +1,9 @@
 import React from 'react';
 import { Lupdate } from '../data/Sdata';
 import Titlesec from '../data/Titlesec';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const About = () => {
   return <div>
@@ -23,7 +26,7 @@ const About = () => {
               </p>
             </div>
             <div className="col-lg-7 col-md-12 md-mt-5">
-              <div className="owl-carousel owl-theme no-pb" data-dots="false" data-items="2" data-sm-items="1" data-autoplay="true">
+              <OwlCarousel className="owl-theme no-pb" dots={false} items={2} autoplay={true}>
                 {Lupdate.map((val,ind)=>{
                   const {imgs,title} = val;
                   return(
@@ -42,7 +45,7 @@ const About = () => {
                   )
                 })}
 
-              </div>
+              </OwlCarousel>
             </div>
           </div>
           

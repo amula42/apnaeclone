@@ -78,7 +78,7 @@ const Contact = () => {
           <div className="row align-items-center">
             <div className="col-md-12">
               <div className="map iframe-h-2">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.258850632251!2d80.99793271504386!3d26.863515883148718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be356d255b39d%3A0x67675f8f9961f18!2sApna%20E-Kendra!5e0!3m2!1sen!2sin!4v1614158830855!5m2!1sen!2sin" width="100%" height="250px" style={{border:"0"}} allowFullScreen="" loading="lazy"></iframe>
+          <iframe title='maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.258850632251!2d80.99793271504386!3d26.863515883148718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be356d255b39d%3A0x67675f8f9961f18!2sApna%20E-Kendra!5e0!3m2!1sen!2sin!4v1614158830855!5m2!1sen!2sin" width="100%" height="250px" style={{border:"0"}} allowFullScreen="" loading="lazy"></iframe>
         </div>
             </div>
             </div>

@@ -78,24 +78,24 @@ const Footer = () => {
                                         <span id="lbladdress">C-B 2/5,Shivangi Tower, Vibhuti Khand Gomti Nagar, Lucknow 226010</span>
                                         </p>
                                     </li>
-                                    <li><a href="#">
+                                    <li><a href="/">
                                         <i className="fa fa-envelope" aria-hidden="true"></i>
                                         <span id="lblemail">support@apnaekendra.in</span>
                                         </a>
                                     </li>
-                                    <li><a href="#">
+                                    <li><a href="/">
                                         <i className="fa fa-phone" aria-hidden="true"></i>+91-<span id="lblmob2"></span></a>
                                     </li>
-                                    <li><a href="#">
+                                    <li><a href="/">
                                         <i className="fa fa-phone" aria-hidden="true"></i>+91-<span id="lblmob1">9076617189</span></a>
                                     </li>
-                                    <li><a href="#">
+                                    <li><a href="/">
                                         <i className="fa fa-phone" aria-hidden="true"></i>+91-9076617200</a>
                                     </li>
-                                    <li><a href="#">
+                                    <li><a href="/">
                                         <i className="fa fa-phone" aria-hidden="true"></i>+91-9076617199</a>
                                     </li>
-                                    <li><a href="#">
+                                    <li><a href="/">
                                         <i className="fa fa-phone" aria-hidden="true"></i>+91-9076617192</a>
                                     </li>
                                 </ul>

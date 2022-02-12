@@ -134,6 +134,10 @@ h6 {font-size: 17px; line-height: 26px;}
 .insideText {font-size: 100px; line-height: 100px;}
 .error-page h1 {font-size: 200px; line-height: 150px;}
 
+.owl_responsive{
+  position: relative !important ;
+}
+
 }
 
 @media (max-width: 767px){

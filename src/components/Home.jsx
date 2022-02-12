@@ -1,13 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {Lupdate, Hservices, Testimonial} from '../data/Sdata';
+import Marquee from 'react-fast-marquee';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Home = () => {
 
   return <div>
       <section className="fullscreen-banner banner banner-3 p-0 o-hidden grediant-overlay" data-overlay="9">
         <div className="insideText">{global.company}</div>
-        <div className="owl-carousel owl-theme no-pb" data-items="1" data-dots="false" data-autoplay="true" style={{ position:"absolute" }}>
+        <OwlCarousel className="owl-theme no-pb owl_responsive" items={1} loop={true} dots={false} autoplay={true} style={{ position:"absolute" }}>
           <div className="item">
             <div className="align-center p-0">
               <div className="container">
@@ -50,7 +54,7 @@ const Home = () => {
               </div>
             </div>
           </div> 
-        <div className="item">
+          <div className="item">
             <div className="align-center p-0">
               <div className="container">
                 <div className="row align-items-center">
@@ -65,15 +69,15 @@ const Home = () => {
               <div className="col-lg-7 col-md-12 order-lg-1 md-mt-5">
                 <h1 className="mb-4 animated bounceInLeft delay-2 duration-4">Looking For Most Powerfull <span className="font-w-5">Digital Payment Service Provider</span> </h1>
                 
-                <div className="d-flex align-items-center animated fadeInUp delay-4 duration-5"> <a className="btn btn-theme" href="#"><span>Learn More</span></a>
+                <div className="d-flex align-items-center animated fadeInUp delay-4 duration-5"> <a className="btn btn-theme" href="/"><span>Learn More</span></a>
                   <a className="play-btn popup-youtube ml-4 d-flex align-items-center" href="https://www.youtube.com/watch?v=hkRKTdo9rZk"><span>Play Now</span><img className="img-fluid pulse radius-4" src="images/play.png" alt=""/></a>
                 </div>
               </div>        
             </div>
                 </div>
               </div>
-            </div> 
-          </div>
+          </div> 
+        </OwlCarousel>
         
       </section>
 
@@ -82,11 +86,11 @@ const Home = () => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-10 col-md-9 col-sm-10 col-xs-12">
-                <marquee scrollamount="5">
+                <Marquee pauseOnHover={true} gradient={false}  speed={70}>
                  <h6 className="spacemark">
-                  <a href="#" style={{color: "#fff"}}> {global.hcompany}  का रजिस्ट्रेशन करने के लिए  Online Signup https://apnaekendra.in/MemberRegistration.aspx </a>
+                  <a href="/" style={{color: "#fff"}}> {global.hcompany}  का रजिस्ट्रेशन करने के लिए  Online Signup https://apnaekendra.in/MemberRegistration.aspx </a>
                   </h6>
-                </marquee>
+                </Marquee>
               </div>
             </div>
           </div>
@@ -104,15 +108,15 @@ const Home = () => {
               <h6>Latest Update </h6>
             </div>
 
-         <marquee scrollamount="5">
+         <Marquee pauseOnHover={true} gradient={false} delay={5} speed={70} >
             <ul className="list-unstyled list-icon">
-              <li className="mb-3"><i className="flaticon-tick"></i>"{global.hcompany}" लाया है "लोन " की एक नयी सुविधा अब आप "अपना ई केंद्र" के साथ जुड़ कर अपने गांव शहर में कही भी किसे भी लोन की सुविधा दे सकते है , इतना ही नहीं प्रत्येक "लोन" देने पर कमीशन की सुविधा अब रिटेलर , डिस्ट्रीब्यूटर , मास्टर , सुपर सभी को मिलेगा। लोन देने पर कमीशन साथ ही साथ , EMI पेमेंट पर भी 0.50% तक कमीशन। देर न करे जल्द ही रजिस्टर करे :- https://apnaekendra.in या संपर्क करे:- 9076617197,96,92,94</li>
+              <li className="mb-3"><i className="flaticon-tick"></i>"{global.hcompany}" लाया है "लोन " की एक नयी सुविधा अब आप "{global.hcompany}" के साथ जुड़ कर अपने गांव शहर में कही भी किसे भी लोन की सुविधा दे सकते है , इतना ही नहीं प्रत्येक "लोन" देने पर कमीशन की सुविधा अब रिटेलर , डिस्ट्रीब्यूटर , मास्टर , सुपर सभी को मिलेगा। लोन देने पर कमीशन साथ ही साथ , EMI पेमेंट पर भी 0.50% तक कमीशन। देर न करे जल्द ही रजिस्टर करे :- https://apnaekendra.in या संपर्क करे:- 9076617197,96,92,94</li>
           
             </ul>
-          </marquee>
+          </Marquee>
           </div>
           <div className="col-lg-7 col-md-12 md-mt-5 wow fadeInRight" data-wow-duration="0.8">
-            <div className="owl-carousel owl-theme no-pb" data-dots="false" data-items="2" data-sm-items="1" data-autoplay="true">
+            <OwlCarousel className="owl-theme no-pb" items={2} dots={false} autoplay={true} loop={true} >
 
               {Lupdate.map((val,ind)=>{
                 const {imgs,title} = val;
@@ -132,7 +136,7 @@ const Home = () => {
                 )
               })}
 
-            </div>
+            </OwlCarousel>
           </div>
         </div>
       </div>
@@ -142,9 +146,9 @@ const Home = () => {
     <section className="pos-r">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5  image-column bg-contain bg-pos-l" data-bg-img="images/pattern/07.png  ">
+          <div className="col-lg-5  image-column bg-contain bg-pos-l" style={{backgroundImage: "url(images/pattern/07.png)"}}>
             <div className="round-animation1">
-             <img className="img-fluid" src="images/about/02.gif" alt="" />
+             <img className="img-fluid" src="images/about/mobile.gif" alt="" />
             </div>
           </div>
           <div className="col-lg-7 col-md-12 ml-auto md-mt-5 wow fadeInLeft" data-wow-duration="0.6">
@@ -374,7 +378,7 @@ const Home = () => {
     {/* <!--step end-->
 
     <!--testimonial start--> */}
-    <section className="animatedBackground" data-bg-img="images/pattern/05.png">
+    <section className="animatedBackground" style={{backgroundImage: "url(images/pattern/05.png)"}}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-5 col-md-12">
@@ -384,7 +388,7 @@ const Home = () => {
             </div>
           </div>
           <div className="col-lg-7 col-md-12 md-mt-5">
-            <div className="owl-carousel owl-theme" data-items="1">
+            <OwlCarousel className="owl-theme" items={1}>
               {Testimonial.map((testi,ind3) => {
                 const { thmimg, thnname, thmcntnt, thmlcn } = testi;
                 return(
@@ -407,7 +411,7 @@ const Home = () => {
                 )
               })}
 
-            </div>
+            </OwlCarousel>
           </div>
         </div>
       </div>

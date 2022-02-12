@@ -30,25 +30,25 @@ const Navbar = () => {
                         </li>
 
                         <li className="nav-item dropdown" data-toggle="hover">
-                            <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                            <a className="nav-link dropdown-toggle" href="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
                                 <div className="dropdown-menu">
                                     <ul className="list-unstyled">
                                         <li>
-                                            <a href="photogallary.html">Photo Gallery</a>
+                                            <NavLink to="/photogallery">Photo Gallery</NavLink>
                                         </li>
                                         <li>
-                                            <a href="videogallery.html">Video Gallery</a>
+                                            <NavLink to="/videogallery">Video Gallery</NavLink>
                                         </li>
                                     </ul>
                                 </div>
                         </li>
 
                         <li className="nav-item dropdown" data-toggle="hover">
-                            <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Benefit </a>
+                            <a className="nav-link dropdown-toggle" href="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Benefit </a>
                                 <div className="dropdown-menu">
                                     <ul className="list-unstyled">
                                         <li>
-                                            <a href="Commission_Chart.html">Commission Chart </a>
+                                            <NavLink to="/commissionchart">Commission Chart </NavLink>
                                         </li>
                                         <li>
                                             <a href="Offers.html">Offers</a>
