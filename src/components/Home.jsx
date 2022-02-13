@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import {Lupdate, Hservices, Testimonial} from '../data/Sdata';
 import Marquee from 'react-fast-marquee';
@@ -7,6 +7,10 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Home = () => {
+
+  useEffect(() => {
+    document.title = `${global.company}`
+  });
 
   return <div>
       <section className="fullscreen-banner banner banner-3 p-0 o-hidden grediant-overlay" data-overlay="9">

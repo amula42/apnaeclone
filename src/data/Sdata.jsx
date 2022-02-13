@@ -4,7 +4,7 @@ const Lupdate = [
         imgs:"images/feature/01.png",
     },
     {
-        title:"Apna E Kendra Recharge",
+        title:`${global.company} Recharge`,
         imgs:"images/feature/02.png",
     },
     {

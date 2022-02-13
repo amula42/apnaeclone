@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Titlesec = (props) => {
+
+    useEffect(() => {
+        document.title = `${props.titlesec} - ${global.company}`
+    });
+    
   return <div>
       <section className="page-title o-hidden text-center grey-bg bg-contain animatedBackground" style={{backgroundImage: "url(images/pattern/05.png)"}} >
         <div className="container">
