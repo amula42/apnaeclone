@@ -51,13 +51,13 @@ const Navbar = () => {
                                             <NavLink to="/commissionchart">Commission Chart </NavLink>
                                         </li>
                                         <li>
-                                            <a href="Offers.html">Offers</a>
+                                            <NavLink to="/offers">Offers</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Devices.html"> Devices</a>
+                                            <NavLink to="/devices"> Devices</NavLink>
                                         </li>
                                         <li>
-                                            <a href="Downloads.html">Softwares Download</a>
+                                            <NavLink to="/softwares">Softwares Download</NavLink>
                                         </li>
                                         <li>
                                             <a href="documentation.html">Documentation</a>

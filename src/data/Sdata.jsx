@@ -1,3 +1,4 @@
+import './Globalvar'
 const Lupdate = [
     {
         title:"Agent Commission Chart",

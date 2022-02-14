@@ -19,6 +19,9 @@ import { useEffect } from 'react';
 import PhotoGallery from './components/Gallery/PhotoGallery';
 import VideoGallery from './components/Gallery/VideoGallery';
 import CommissionChart from './components/Benefit/CommissionChart';
+import Offers from './components/Benefit/Offers';
+import Devices from './components/Benefit/Devices';
+import Softwares from './components/Benefit/Softwares';
 
 function App() {
 
@@ -40,6 +43,9 @@ function App() {
         <Route path='/photogallery' element={<PhotoGallery/>} />
         <Route path='/videogallery' element={<VideoGallery/>} />
         <Route path="/commissionchart" element={<CommissionChart/>} />
+        <Route path="/offers" element={<Offers/>} />
+        <Route path="/devices" element={<Devices/>} />
+        <Route path="/softwares" element={<Softwares/>} />
         <Route path="/moneytransfer" element={<MoneyTransfer/>} />
         <Route path="/allrecharge" element={<AllRecharge/>} />
         <Route path="/aeps" element={<Aeps/>} />
