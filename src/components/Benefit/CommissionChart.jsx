@@ -21,7 +21,7 @@ const CommissionChart = () => {
                         trigger={() => <a type="submit" className="btn btn-theme"> Print</a>}
                         content={() => componentRef.current}
                     /> */}
-                    <a href='/' type="submit" className="btn btn-theme"> Print</a>
+                    {/* <a href='/' type="submit" className="btn btn-theme"> Print</a> */}
                     {/* <a href="Commission_chart-2.html" type="submit" className="btn btn-theme" onclick="salvaPlanilha()"> Download Excel</a> */}
                 </div>
                 <div className="col-lg-12 col-md-8 col-xs-12">

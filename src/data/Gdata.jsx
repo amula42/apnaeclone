@@ -3,12 +3,6 @@ const Photodata = [
     pimgs:"images/feature/08032108075615.png",
   },
   {
-    pimgs:"images/feature/08032108074614.png",
-  },
-  {
-    pimgs:"images/feature/08032108073413.png",
-  },
-  {
     pimgs:"images/feature/08032108072312.png",
   },
   {

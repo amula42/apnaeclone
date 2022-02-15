@@ -12,7 +12,7 @@ const Footer = () => {
                         <div className="row">
 
                             <div className="col-lg-4 col-md-4  sm-mt-5">
-                                <div className="" data-bg-img="images/bg/02.png">
+                                <div className="" style={{backgroundImage: "url(images/bg/02.png)"}}>
                                     <div className="footer-logo">
                                         <NavLink to="/"><img className="img-center" src="images/logo-white.png" alt="" /></NavLink>
                                     </div>
@@ -52,19 +52,19 @@ const Footer = () => {
                                             <li><NavLink to="/">Home</NavLink></li>
                                             <li><NavLink to="/about">About Us</NavLink></li>
                                             <li><NavLink to="/services">Services</NavLink></li>
-                                            <li><a href="photogallary.html">Photo Gallery</a></li>
-                                            <li><a href="videogallery.html">Video Gallery</a></li>
-                                            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                                            <li><NavLink to="/photogallery">Photo Gallery</NavLink></li>
+                                            <li><NavLink to="/videogallery">Video Gallery</NavLink></li>
+                                            <li><NavLink to="privacypolicy.html">Privacy Policy</NavLink></li>
                                         </ul>
                                     </div>
                                     <div className="col-sm-7">
                                         <ul className="list-unstyled">
-                                            <li><a href="index-2.html">Our Team</a></li>
-                                            <li><a href="Commission_Chart.html">Commission Chart </a></li>
-                                            <li><a href="Offers.html">Offers</a></li>
-                                            <li><a href="Devices.html"> Devices</a></li>
-                                            <li><a href="Downloads.html">Softwares Download</a></li>
-                                            <li><a href="termsandcondition.html">Terms & Condition</a></li>
+                                            <li><NavLink to="/contact">Contact</NavLink></li>
+                                            <li><NavLink to="/commissionchart">Commission Chart </NavLink></li>
+                                            <li><NavLink to="/offers">Offers</NavLink></li>
+                                            <li><NavLink to="/devices"> Devices</NavLink></li>
+                                            <li><NavLink to="/softwares">Softwares Download</NavLink></li>
+                                            <li><NavLink to="termsandcondition.html">Terms & Condition</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
