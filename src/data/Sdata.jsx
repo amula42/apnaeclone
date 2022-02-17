@@ -95,12 +95,12 @@ const Servpg = [
     {
         servimgs:"images/feature/08032107093103.png",
         servtitle:"AEPS",
-        servlink:"nsdl.html",
+        servlink:"/aeps",
     },
     {
         servimgs:"images/feature/08032107104905.png",
         servtitle:"BBPS",
-        servlink:"Paytm_Payment.html",
+        servlink:"/bbps",
     },
     {
         servimgs:"images/feature/08032107113607.png",
@@ -210,7 +210,7 @@ const Servpg = [
     {
         servimgs:"images/feature/08032107270029.png",
         servtitle:"Driving Licence",
-        servlink:"bbps.html",
+        servlink:"/drivinglicence",
     },
     {
         servimgs:"images/feature/08032107273630.png",
@@ -220,7 +220,7 @@ const Servpg = [
     {
         servimgs:"images/feature/08032107305025.png",
         servtitle:"Voter Id Card",
-        servlink:"bbps.html",
+        servlink:"/voterid",
     },
 ];
 export  { Lupdate, Hservices, Testimonial, Servpg };
