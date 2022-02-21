@@ -6,7 +6,6 @@ const Contact = () => {
       <Titlesec titlesec="Contact Us"/>
       <div className="page-content">
 
-      {/* contact start */}
       <section className="contact-1" style={{backgroundImage: "url(images/pattern/02.png)"}}>
         <div className="container">
           <div className="row align-items-center">
