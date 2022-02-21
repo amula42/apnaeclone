@@ -70,8 +70,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* contact end */}
-
       <section className="o-hidden p-0">
         <div className="container-fluid p-0">
           <div className="row align-items-center">
